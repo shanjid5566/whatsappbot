@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+	--font-heroBg: 'Zalando Sans', sans-serif;
+	--font-body: 'Inter', sans-serif;
+}
+
+/* Set Inter as the default app font */
+@layer base {
+	html, body, #root {
+		font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	}
+}
+
+
+
+
+.container {
+	
+	@apply max-w-7xl mx-auto;
+}
+
+/* .paddingContainer {
+	
+	@apply px-4 sm:px-6 lg:px-8 xl:px-0;
+} */
+.paddingContainer {
+  
+  @apply px-4 sm:px-6;
+
+
+  @apply lg:px-0 lg:w-11/12;
+
+  
+  @apply xl:px-0;
+}
